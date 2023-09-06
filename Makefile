@@ -12,7 +12,6 @@ all: win32 win64 linux
 
 clean:
 	rm -rf bin/*
-	rm -rf tests/bin/*
 
 win32:
 	$(WIN32_CC) src/main.cpp -o bin/$(PROJECTNAME)-$(VERSION)-win32.exe -I ./include/* -L ./lib/*
